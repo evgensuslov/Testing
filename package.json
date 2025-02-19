@@ -1,7 +1,6 @@
 {
   "name": "gulp-starter",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "gulp",
@@ -62,5 +61,6 @@
   "dependencies": {
     "chalk": "^5.3.0",
     "gulp-uglify-es": "^3.0.0"
-  }
+  },
+  "description": ""
 }
