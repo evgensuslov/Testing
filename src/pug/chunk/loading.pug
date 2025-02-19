@@ -1,0 +1,10 @@
+section.loading
+    .container.loading__container
+        .loading__wrapper
+            h3.loading__wrapper-title Добавьте Ваши вопросы 
+            form.loading__form(action="" ) 
+                input.loading__form-question#question(type="text", name="question", placeholder="Введите вопрос")
+                textarea.loading__form-answer#answer(cols="30", row="3", name="answer".placeholder="Введите ответ") 
+                input.loading__form-correct#correct(type="text", name="correct", placeholder="Введите номер правильного ответа")
+                textarea.loading__form-explanation#explanation(cols="30", row="3", name="explanation".placeholder="Введите обьяснение ответа")
+                button.loading__form-button.button(type="button") Сохранить
