@@ -66,3 +66,5 @@ const questions = [
         explanation: "правильный ответ - 3"
     }
 ]
+
+module.exports = questions;

@@ -9,7 +9,7 @@ include layout/app.pug
         .product 
           h3.product__title.title__h3 Выберите задание по продукту
           ul.product__list 
-            each value, index in {'KES' : 'kes', 'KSMG' : 'ksmg', 'KICS' : 'kics', 'KEDR' : 'kedr', 'KATA' : 'kata', 'KUMA' : 'kuma'}
+            each value, index in {'KSC' : 'ksc', 'KSMG' : 'ksmg', 'KICS' : 'kics', 'KEDR' : 'kedr', 'KATA' : 'kata', 'KUMA' : 'kuma', 'LOAD' : 'load'}
               li.product__item 
                 a.product__link(href= value + ".html")= index
 
