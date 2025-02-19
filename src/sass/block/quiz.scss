@@ -1,0 +1,88 @@
+.quiz {
+
+    &__progress {
+        text-align: right;
+        margin-bottom: 20px;
+        @include flex-between;
+        &-bar {
+            height: 10px;
+            width: 300px;
+            border: 1px solid;
+            border-radius: 30px;
+            border-color: $color-green;
+            background-color: rgb(245, 245, 245)
+        }
+        
+        &-inner {
+            height: 100%;
+            border-radius: 30px;
+            width: 2%;
+            background: rgb(18, 231, 48);
+            transition: all 0.3s ease-in-out;
+            background: linear-gradient(90deg, rgb(18, 231, 48)0%, rgb(0, 212, 255)100%);
+        }
+    }
+
+    &__questions {
+
+        &-item {
+            @include reset-list;
+            cursor: pointer;
+            border: 1px solid $color-white;
+            border-radius: 10px;
+            width: 50%;
+            margin-bottom: 2px;
+
+
+            &:hover {
+                color: $color-gl;
+            }
+        }
+
+        &-footer {
+            @include flex-between;
+        }
+    }
+
+    &__result {
+        text-align: center;
+        margin-bottom: 20px;
+        @include flex-colum-top;
+
+        &-text {
+            @include reset-model;
+        }
+
+        &-footer {
+            margin-top: 20px;
+            a {
+                @include reset-link;
+                color: $color-white;
+            }
+        }
+    }
+}
+
+.answer {
+    accent-color: #C56FFF;
+    width: 20px;
+    height: 20px;
+
+    &-correct {
+        color: $color-green;
+
+        &-checkbox {
+            accent-color: $color-green;
+        }
+    }
+
+    &-incorrect {
+        color: $color-red;
+    
+        &-checkbox {
+            accent-color: $color-red;
+        }
+    }
+}
+
+

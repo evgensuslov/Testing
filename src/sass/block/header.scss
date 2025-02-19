@@ -1,0 +1,44 @@
+.header {
+    background-color: $color-white;
+    border-bottom: 1px solid $color-green;
+
+    &__main {
+        background-color: transparent;
+    }
+
+    &__container {
+        margin: 0 auto;
+        padding: 0, 10px;
+        max-width: 1200px;
+    }
+
+    &__menu {
+        @include flex-between;
+        padding-top: 40px;
+        padding-bottom: 45px;
+    }
+
+    &__logo-img {
+        width: 150px;
+    }
+
+    &__nav {
+        
+        &-list {
+            @include flex-between;
+            @include reset-list;
+            color: $color-gl;
+            gap: 35px;
+        }
+
+        &-link {
+            @include reset-link;
+            @include font-Kaspersky-Bold;
+            @include font(16px, 20px);
+            
+            &:hover {
+                color: $color-green;
+            }
+        }
+    }
+}

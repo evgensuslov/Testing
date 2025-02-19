@@ -1,0 +1,11 @@
+.footer
+    .container.footer__container 
+        nav.footer__nav
+            .footer__nav-box
+                ul.footer__nav-list 
+                    each value, index in {'ГЛАВНАЯ' : 'index', 'KES' : 'kes', 'KSMG' : 'ksmg', 'KICS' : 'kics', 'KEDR' : 'kedr', 'KATA' : 'kata', 'KUMA' : 'kuma'}
+                        li.footer__nav-item 
+                            a.footer__nav-link(href= value + ".html")= index
+
+
+

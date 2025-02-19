@@ -1,0 +1,31 @@
+.footer {
+    background-color: $color-black;
+    padding: 50px 0 32px;
+
+    &__container {
+        min-height: 100px;
+        color: $color-white;
+    }
+
+    &__nav {
+        margin-bottom: 45px;
+
+        &-list {
+            @include reset-list;
+            @include flex-center;
+            gap: 20px;
+        }
+
+        &-item {
+            padding-top: 20px;
+        }
+
+        &-link {
+            @include reset-link;
+
+            &:hover {
+                color: $color-blue;
+            }
+        }
+    }
+}

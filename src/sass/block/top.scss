@@ -1,0 +1,35 @@
+.top {
+    &__title {
+        text-align: center;
+        margin-top: 80px;
+    }
+}
+
+.product {
+    margin-top: 50px;
+
+    &__title {
+        text-align: left;
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+
+    &__list {
+        @include reset-list;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        justify-items: center;
+        color: $color-gl;
+    }
+
+    &__link {
+        @include reset-link;
+        @include font-Kaspersky-Bold;
+        @include font(20px, 24px);
+        
+        &:hover {
+            color: $color-green;
+        }
+    }
+}

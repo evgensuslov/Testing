@@ -1,0 +1,37 @@
+// Вертикальное выравнивание по центру
+@mixin flex-center-v {
+  display: flex;
+  align-items: center;
+}
+
+// Выравнивание по центру
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-left {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+@mixin flex-between-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+}
+
+@mixin flex-colum-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: top;
+}

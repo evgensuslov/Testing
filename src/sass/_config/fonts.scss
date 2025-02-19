@@ -1,0 +1,44 @@
+@import "../_mixins/font-face";
+
+/* Шаблоны дя размеров
+@include font-face("FontName", "/font/FontName/FontName-Thin", 100)
+@include font-face("FontName", "/font/FontName/FontName-ExtraLight", 200);
+@include font-face("FontName", "/font/FontName/FontName-Light", 300);
+@include font-face("FontName", "/font/FontName/FontName-Regular", 400);
+@include font-face("FontName", "/font/FontName/FontName-Medium", 500);
+@include font-face("FontName", "/font/FontName/FontName-SemiBold", 600);
+@include font-face("FontName", "/font/FontName/FontName-Bold", 700);
+@include font-face("FontName", "/font/FontName/FontName-ExtraBold", 800);
+@include font-face("FontName", "/font/FontName/FontName-Black", 900);
+*/
+//Шрифт по умолчанию
+@include font-face("OpenSans", "/font/OpenSans-Regular", 400);
+@mixin font-OpenSans-Regular {
+  font-family: 'OpenSans';
+  font-weight: 400;
+  font-style: normal;
+}
+// Подключение шрифтов
+@include font-face("Kaspersky-Light", "/font/Kaspersky/KasperskySans-Light", 300);
+@include font-face("Kaspersky-Regular", "/font/Kaspersky/KasperskySans-Regular", 400);
+@include font-face("Kaspersky-Bold", "/font/Kaspersky/KasperskySans-Bold", 700);
+
+// Миксины для шрифтов
+@mixin font-Kaspersky-Light {
+  font-family: 'Kaspersky-Light';
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin font-Kaspersky-Regular {
+  font-family: 'Kaspersky-Regular';
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin font-Kaspersky-Bold {
+  font-family: 'Kaspersky-Bold';
+  font-weight: 700;
+  font-style: normal;
+}
+

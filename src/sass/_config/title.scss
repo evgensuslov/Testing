@@ -1,0 +1,17 @@
+.title {
+
+    &__h1 {
+        @include font-Kaspersky-Bold;
+        @include font(96px, 116px);
+    }
+
+    &__h2 {
+        @include font-Kaspersky-Bold;
+        @include font(48px, 58px);
+    }
+
+    &__h3 {
+        @include font-Kaspersky-Bold;
+        @include font(24px, 29px);
+    }
+}

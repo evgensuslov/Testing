@@ -1,0 +1,28 @@
+section.quiz
+    .container.quiz__container
+        .quiz__warning.hidden 
+            p в тесте нет вопросов.
+        .quiz__wrapper.hidden
+            .quiz__progress
+                .quiz__progress-time 
+                    label(for="time") Осталось времени
+                    p(id="time")
+                .quiz__progress-bar 
+                    .quiz__progress-inner
+            
+            .quiz__questions
+                h3.quiz__questions-title 
+                ul.quiz__questions-list 
+                .quiz__questions-explanation.hidden правильный ответ
+                .quiz__questions-footer
+                    button.quiz__questions-answer.button(type="button" ) Ответить
+                    button.quiz__questions-next.button(type="button" onclick="null") Следующий
+                    p.quiz__questions-total 1 из 2
+
+        .quiz__result.hidden
+            .quiz__result-title Тестирование окончено! 
+            .quiz__result-text Тут будут результаты тестирования
+            .quiz__result-footer 
+                a.quiz__result-restart.button(href="/") Начать заново 
+
+

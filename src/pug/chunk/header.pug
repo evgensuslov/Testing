@@ -1,0 +1,13 @@
+.header
+    .container.header__container
+        .header__menu
+            a.header__logo-link(href="index.html") 
+                img.header__logo-img(src="img/svg/logo.svg" alt="LOGO")
+            nav.header__nav 
+                ul.header__nav-list 
+                    each value, index in {'ГЛАВНАЯ' : 'index', 'KES' : 'kes', 'KSMG' : 'ksmg', 'KICS' : 'kics', 'KEDR' : 'kedr', 'KATA' : 'kata', 'KUMA' : 'kuma'}
+                        li.header__nav-item 
+                            a.header__nav-link(href= value + ".html")= index
+
+
+

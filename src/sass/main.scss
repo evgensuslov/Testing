@@ -1,0 +1,70 @@
+@use "sass:math";
+
+// Настройки
+@import "_config/variables";
+@import "_config/fonts";
+@import "_config/title";
+@import "_config/button";
+
+// Миксины
+@import "_mixins/reset";
+@import "_mixins/media";
+@import "_mixins/container";
+@import "_mixins/flex";
+@import "_mixins/backgroung";
+
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html, body {
+  box-sizing: border-box;
+  @include reset-model;
+
+  overflow-x: hidden;
+  background-color: #fff;
+  
+  @include font-OpenSans-Regular;
+  font-size: $font-size-base;  
+  line-height: $line-height-base; 
+  color: $color-black;
+}
+
+main {
+  min-height: 60vh;
+}
+// Изображения
+img {
+  max-width: 100%;
+}
+
+// Ограничение для макета
+.wrapper {
+  @include wrapper;
+  background-color: $color-white;
+  color: $color-black;
+}
+
+// Контентная область
+.container {
+  @include container;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.lock {
+  overflow: hidden !important;
+}
+
+.fixed {
+  position: fixed !important;
+}
+
+// Подключение блоков
+@import 'block/*.scss';
+// @import '../css/module/swiper-bundle.min.css';

@@ -1,0 +1,20 @@
+include layout/app.pug
+
+  include chunk/header.pug
+
+  main.main 
+    section.top 
+      .container
+        h2.top__title.title__h2 Тестовые задания по продуктам Лаборатории Касперского
+        .product 
+          h3.product__title.title__h3 Выберите задание по продукту
+          ul.product__list 
+            each value, index in {'KES' : 'kes', 'KSMG' : 'ksmg', 'KICS' : 'kics', 'KEDR' : 'kedr', 'KATA' : 'kata', 'KUMA' : 'kuma'}
+              li.product__item 
+                a.product__link(href= value + ".html")= index
+
+        
+
+  include chunk/footer.pug
+  include layout/script.pug
+

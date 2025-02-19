@@ -1,0 +1,7 @@
+@mixin background ($file-img, $repeat: no-repeat, $position: center, $size: cover) {
+//    $path-file-img = '../img/' + $file-img;
+    background-image: url($file-img);
+    background-repeat: $repeat;
+    background-position: $position;
+    background-size: $size;
+}
