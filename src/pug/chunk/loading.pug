@@ -1,10 +1,15 @@
 section.loading
     .container.loading__container
         .loading__wrapper
-            h3.loading__wrapper-title Добавьте Ваши вопросы 
-            form.loading__form(action="" ) 
-                input.loading__form-question#question(type="text", name="question", placeholder="Введите вопрос")
-                textarea.loading__form-answer#answer(cols="30", row="3", name="answer".placeholder="Введите ответ") 
-                input.loading__form-correct#correct(type="text", name="correct", placeholder="Введите номер правильного ответа")
-                textarea.loading__form-explanation#explanation(cols="30", row="3", name="explanation".placeholder="Введите обьяснение ответа")
-                button.loading__form-button.button(type="button") Сохранить
+            h3.loading__wrapper-title.title__h3 Добавьте Ваши вопросы 
+            form.loading__form(action="" )
+                p.loading__form-title Введите вопрос
+                textarea.loading__form-question#question(cols="50", row="4", name="question", placeholder="Введите вопрос")
+                p.loading__form-title Введите ответ
+                textarea.loading__form-answer#answer(cols="50", row="4", name="answer", placeholder="Введите ответ") 
+                label.loading__form-correct-answer(for="correct-answer") Отметьте правильный ответ 
+                    input#correct-answer(type="checkbox", name="correct-answer")
+                button.loading__form-button.button#btn-add(type="button") Еще ответ
+                p.loading__form-title Введите подсказку
+                textarea.loading__form-explanation#explanation(cols="50", row="4", name="explanation", placeholder="Введите подсказку")
+                button.loading__form-button.button#btn-next(type="button") Сохранить

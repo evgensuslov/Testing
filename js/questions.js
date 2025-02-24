@@ -9,7 +9,7 @@ const questions = [
             "user-select: none",
             "admin-select: true"
         ],
-        explanation: "правильный ответ - 4"
+        explanation: "правильный ответ - 4 "
     },
     {
         question: "Какой атрибут HTML5 указывает, что элемент является недоступным для редактирования?",
@@ -66,3 +66,5 @@ const questions = [
         explanation: "правильный ответ - 3"
     }
 ]
+
+module.exports = questions;

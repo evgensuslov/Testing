@@ -1,6 +1,7 @@
 "use strict";
 //==========================================
 const $ = document.querySelector.bind(document);
+// const questions = require('../../js/questions.js');
 //глобальные переменные
 const quiz = $(".quiz__wrapper"); // карточка опроса
 const warning = $(".quiz__warning"); // карточка предупреждения
